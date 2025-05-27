@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import GoogleImage from "../assets/google-icon-logo-svgrepo-com.svg";
+import { Link } from "react-router"
 
 export function LoginForm({
   className,
@@ -11,7 +12,7 @@ export function LoginForm({
   return (
     <form className={cn("flex flex-col gap-6", className)} {...props}>
       <div className="flex flex-col items-center gap-2 text-center">
-        <h1 className="text-2xl font-bold">Login to your account</h1>
+        <h1 className="text-primary text-2xl font-bold">Login to your account</h1>
         <p className="text-muted-foreground text-sm text-balance">
           Enter your email below to login to your account
         </p>
@@ -24,13 +25,13 @@ export function LoginForm({
         <div className="grid gap-3">
           <div className="flex items-center">
             <Label htmlFor="password">Password</Label>
-            <a href="#" className="ml-auto text-sm underline-offset-4 hover:underline">
+            <a href="#" className="ml-auto text-sm underline-offset-4 hover:underline text-muted-foreground">
               Forgot your password?
             </a>
           </div>
           <Input id="password" type="password" placeholder="**********" required />
         </div>
-        <Button type="submit" className="w-full">
+        <Button type="submit" className="w-full text-secondary">
           Login
         </Button>
         <div
@@ -39,16 +40,16 @@ export function LoginForm({
             Or continue with
           </span>
         </div>
-        <Button variant="outline" className="w-full">
-          <img src={GoogleImage} alt="GOogleImage" srcset="" className="h-full m-1" />
+        <Button variant="outline" className="w-full text-primary">
+          <img src={GoogleImage} alt="GOogleImage" srcset="" className="h-full m-1 " />
           Login with Google
         </Button>
       </div>
-      <div className="text-center text-sm">
+      <div className="text-center text-sm text-muted-foreground">
         Don&apos;t have an account?{" "}
-        <a href="#" className="underline underline-offset-4">
+        < Link to="/signup" className="underline underline-offset-4 font-semibold text-primary">
           Sign up
-        </a>
+        </Link>
       </div>
     </form>
   );
