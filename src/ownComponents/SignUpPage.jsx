@@ -7,7 +7,7 @@ import LoginImage from "../assets/login_Image.png";
 function SignUpPage() {
 
   return (
-     <div className=" root1 grid min-h-svh lg:grid-cols-2 bg-background ">
+     <div className=" root1 grid min-h-svh lg:grid-cols-2 bg-background relative z-100">
       <div className="flex flex-col gap-4 p-6 md:p-10">
         <div className="flex justify-center gap-2 md:justify-start text-lg">
           <a href="#" className=" flex items-center gap-2 font-medium">

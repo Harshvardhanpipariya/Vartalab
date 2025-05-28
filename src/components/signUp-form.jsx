@@ -19,18 +19,18 @@ const SignUpForm = (className, ...props) => {
 
            <div className="grid gap-3 ">
              <Label htmlFor="email">Email</Label>
-             <Input id="email" type="email" placeholder="m@example.com" required  />
+             <Input id="email" type="email" placeholder="m@example.com" required  className='border placeholder:text-primary'  />
            </div>
 
             <div className="grid gap-3">
                <Label htmlFor="Name">Name</Label>
-             <Input id="Name" type="text" placeholder="Name" required />
+             <Input id="Name" type="text" placeholder="Name" required  className='border placeholder:text-primary' />
            </div>
 
 
            <div className="grid gap-3">
                <Label htmlFor="password">Password</Label>
-             <Input id="password" type="password" placeholder="Password" required />
+             <Input id="password" type="password" placeholder="Password" required  className='border placeholder:text-primary' />
            </div>
 
 

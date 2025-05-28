@@ -1,5 +1,5 @@
 .root1 {
-  max-width: 1280px;
+  width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -38,4 +38,21 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+.scrollRemover{
+   -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.scrollRemover::-webkit-scrollbar {
+  display: none;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
