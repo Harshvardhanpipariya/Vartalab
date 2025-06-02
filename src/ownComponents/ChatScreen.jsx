@@ -35,15 +35,8 @@ import { Link } from 'react-router';
 
 const ChatScreen = ({ checked, onChange }) => {
 
-
-
-    
-
-
-
-
     return (
-        <div className='flex items-center justify-center h-screen w-full relative z-10'>
+        <div className='flex items-center justify-center h-screen w-full relative z-100'>
             <div className='bg-muted-foreground h-screen w-[1440px] flex flex-row gap-1'>
                 <div className='bg-background w-[4%] h-full flex flex-col items-center justify-between py-8'>
                     <MessageSquareMore className="size-6 justify-items-end-safe" color={checked ? "white" : "black"} />
